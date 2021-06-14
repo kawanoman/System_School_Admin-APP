@@ -4,56 +4,56 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Rakshith on 4/3/2017.
+ * Created by Kawa Noman on 14/6/2021.
  */
 public class Main {
     public static void main(String[] args) {
-        Teacher lizzy = new Teacher(1,"Lizzy",500);
-        Teacher mellisa = new Teacher(2,"Mellisa",700);
-        Teacher vanderhorn = new Teacher(3,"Vanderhorn",600);
+        Teacher kawa = new Teacher(1,"Kawa",500);
+        Teacher tina = new Teacher(2,"Tina",700);
+        Teacher donato = new Teacher(3,"Donato",600);
 
         List<Teacher> teacherList = new ArrayList<>();
-        teacherList.add(lizzy);
-        teacherList.add(mellisa);
-        teacherList.add(vanderhorn);
+        teacherList.add(kawa);
+        teacherList.add(tina);
+        teacherList.add(donato);
 
 
-        Student tamasha = new Student(1,"Tamasha",4);
-        Student rakshith = new Student(2,"Rakshith Vasudev",12);
-        Student rabbi = new Student(3,"Rabbi",5);
+        Student mattis = new Student(1,"Mahttis",11);
+        Student julie = new Student(2,"Julie",11);
+        Student sarah = new Student(3,"Sarah",5);
         List<Student> studentList = new ArrayList<>();
 
-        studentList.add(tamasha);
-        studentList.add(rabbi);
-        studentList.add(rakshith);
+        studentList.add(mattis);
+        studentList.add(julie);
+        studentList.add(sarah);
 
 
 
 
-        School ghs = new School(teacherList,studentList);
+        School kks = new School(teacherList,studentList);
 
         Teacher megan = new Teacher(6,"Megan", 900);
 
-        ghs.addTeacher(megan);
+        kks.addTeacher(megan);
 
 
-        tamasha.payFees(5000);
-        rakshith.payFees(6000);
-        System.out.println("GHS has earned $"+ ghs.getTotalMoneyEarned());
+        julie.payFees(5000);
+        sarah.payFees(6000);
+        System.out.println("KKS has earned $"+ ghs.getTotalMoneyEarned());
 
         System.out.println("------Making SCHOOL PAY SALARY----");
-        lizzy.receiveSalary(lizzy.getSalary());
-        System.out.println("GHS has spent for salary to " + lizzy.getName()
+        kawa.receiveSalary(kawa.getSalary());
+        System.out.println("KKS has spent for salary to " + kawa.getName()
         +" and now has $" + ghs.getTotalMoneyEarned());
 
-        vanderhorn.receiveSalary(vanderhorn.getSalary());
-        System.out.println("GHS has spent for salary to " + vanderhorn.getName()
+        donato.receiveSalary(vanderhorn.getSalary());
+        System.out.println("KKS has spent for salary to " + donato.getName()
                 +" and now has $" + ghs.getTotalMoneyEarned());
 
 
-        System.out.println(rakshith);
+        //System.out.println(kawa);
 
-        mellisa.receiveSalary(mellisa.getSalary());
+        tina.receiveSalary(tina.getSalary());
 
         System.out.println(mellisa);
 
